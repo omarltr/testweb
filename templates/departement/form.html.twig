@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Create/Edit Departement{% endblock %}
+
+{% block body %}
+    <h1>Create/Edit Departement</h1>
+
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    {{ form_end(form) }}
+
+    <a href="{{ path('departement_index') }}" class="btn btn-secondary">Back to List</a>
+{% endblock %}

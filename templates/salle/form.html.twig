@@ -1,0 +1,6 @@
+{{form_start(f)}}
+ 	   {{form_label(f.name,"class name:")}}
+ 	   {{form_widget(f.name)}}
+ 	     <button class="btn">{{ button_label|default('Save') }}</button>
+
+  {{form_end(f)}}
